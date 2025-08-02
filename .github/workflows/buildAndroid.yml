@@ -29,8 +29,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-#      ## 设置 Flutter 环境
       - name: Set up Flutter
+#     ## 设置 Flutter 环境
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.32.8'
@@ -46,8 +46,8 @@ jobs:
 #          rm -rf .dart_tool pubspec.lock
 #          echo ">>clean finished"
 
-#      ## 生成 local.properties 并设置 flutter.sdk
       - name: Configure Flutter SDK path
+#     ## 生成 local.properties 并设置 flutter.sdk
         working-directory: ${{ env.ANDROID_DIR }}
         run: |
           echo "flutter.sdk=$FLUTTER_ROOT" > local.properties
