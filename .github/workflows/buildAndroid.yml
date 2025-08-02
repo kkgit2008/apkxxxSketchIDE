@@ -10,9 +10,9 @@ on:
   ##Support manual build in 'Actions/workflow'
 
 env:
-  ANDROID_DIR: .
+  #ANDROID_DIR: .
   ##Build from project root (when 'app' folder is just at project root)
-  #ANDROID_DIR: android
+  ANDROID_DIR: android
   ##Build from 'android' folder (when 'app' folder is in 'project/android' folder), modify it as you need.
 
 permissions:
